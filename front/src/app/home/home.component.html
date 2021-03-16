@@ -1,0 +1,8 @@
+<h3>Student {{application.name}} Details</h3>
+<div><span>id: </span>{{application.id}}</div>
+<div><span>name: </span>{{application.name}}</div>
+
+<div>
+  <label for="name">Hero name: </label>
+  <input id="name" [(ngModel)]="application.name" placeholder="name">
+</div>
