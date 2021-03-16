@@ -1,8 +1,20 @@
-<h3>Student {{application.name}} Details</h3>
-<div><span>id: </span>{{application.id}}</div>
-<div><span>name: </span>{{application.name}}</div>
-
-<div>
-  <label for="name">Hero name: </label>
-  <input id="name" [(ngModel)]="application.name" placeholder="name">
+<app-header></app-header>
+<div class="home">
+  <div class="first-screen">
+    <div class="first-screen__title-wrapper">
+      <div class="first-screen__title">
+        Менторство
+        <br>в сфере IT
+      </div>
+    </div>
+    <div class="first-screen__sub-title-callback">
+      <div class="first-screen__sub-title">
+        Всего одно требование - Ваше желание
+        <br>Начни карьеру в IT. Найди себя в IT
+      </div>
+      <div class="first-screen__callback">
+        <app-callback-button></app-callback-button>
+      </div>
+    </div>
+  </div>
 </div>

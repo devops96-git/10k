@@ -1,0 +1,34 @@
+.first-screen {
+  background: #336699;
+  padding-top: 137px;
+  padding-bottom: 282px;
+  &__title-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    color: #333333;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 120px;
+  }
+  &__sub-title-callback {
+    width: 50%;
+    margin-left: 50%;
+  }
+  &__sub-title {
+    padding-top: 58px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #262626;
+  }
+  &__callback {
+    margin-top: 29px;
+  }
+}

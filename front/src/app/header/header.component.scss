@@ -1,0 +1,23 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 59px;
+
+  &__logo {
+
+  }
+  &__right {
+    display: flex;
+  }
+  &__app-callback {
+
+  }
+  &__language {
+
+  }
+}
+
