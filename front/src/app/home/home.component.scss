@@ -1,5 +1,8 @@
 .first-screen {
-  background: '/assets/images/first-screen__bg.svg';
+  background-image: url("/assets/images/first-screen__bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   padding-top: 137px;
   padding-bottom: 282px;
   &__title-wrapper {
@@ -17,10 +20,10 @@
   &__sub-title-callback {
     width: 50%;
     margin-left: 50%;
+    padding-left: 50px;
   }
   &__sub-title {
     padding-top: 58px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
