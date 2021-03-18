@@ -35,3 +35,107 @@
     margin-top: 29px;
   }
 }
+
+.owner-screen {
+  background: #262626;
+
+  &__content {
+    display: flex;
+    padding: 80px 294px 67px 159px;
+
+  }
+
+  &__title {
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FEEE67;
+  }
+
+  &__name {
+    margin-top: 80px;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: #FFFFFF;
+  }
+
+  &__total_ex {
+    margin-top: 45px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+  }
+
+  &__photo {
+    margin-left: 214px;
+  }
+
+  &__projects {
+    margin-top: 48px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #F9FDFE;
+  }
+
+  &__ex {
+    margin-top: 67px;
+    display: flex;
+
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 77px;
+  }
+
+  &__ex-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #F9FDFE;
+  }
+
+  &__ex1-12 {
+    color: #DFB2F4;
+  }
+
+  &__ex2-10 {
+    color: #FEEE67;
+  }
+
+  &__ex3-5 {
+    color: #45C0A4;
+  }
+
+  &__technologies {
+    border-top: 2px solid #F9FDFE;
+    border-bottom: 2px solid #F9FDFE;
+
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 160.1%;
+    /* or 38px */
+
+    letter-spacing: 0.12em;
+
+    color: #F9FDFE;
+  }
+
+}
