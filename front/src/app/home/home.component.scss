@@ -35,3 +35,123 @@
     margin-top: 29px;
   }
 }
+
+
+
+.faq-screen {
+  display: flex;
+  padding-top: 90px;
+
+  &__title {
+    padding-left: 157px;
+    flex: 1 1 auto;
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #DFB2F4;
+  }
+
+  &__questions {
+    flex: 0 0 1040px;
+
+    &-item {
+      border-top: 3px solid #262626;
+
+      &:last-child {
+        border-bottom: 3px solid #262626;
+      }
+
+      &_open {
+        background-color: #262626;
+      }
+
+      &-title {
+        position: relative;
+        padding: 35px 150px 35px 80px;
+        font-family: Russo One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 39px;
+        color: #262626;
+        cursor: pointer;
+
+        .faq-screen__questions-item_open & {
+          color: #DFB2F4;
+        }
+
+        button {
+          position: absolute;
+          display: block;
+          right: 100px;
+          top: 50%;
+          margin-top: -15px;
+          width: 31px;
+          height: 31px;
+          border: 0;
+          background-color: transparent;
+          font-size: 0;
+          color: transparent;
+          cursor: pointer;
+
+          &::before,
+          &::after {
+            position: absolute;
+            content: '';
+            display: block;
+            background-color: #262626;
+            transition: transform .3s;
+
+            .faq-screen__questions-item_open & {
+              background-color: #fff;
+            }
+          }
+          &::before {
+            top: 14px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+
+            .faq-screen__questions-item_open & {
+              transform: rotate(45deg);
+            }
+          }
+          &::after {
+            top: 0;
+            left: 14px;
+            width: 3px;
+            height: 100%;
+
+            .faq-screen__questions-item_open & {
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+
+      &-text {
+        display: none;
+        width: 730px;
+        max-width: 100%;
+        color: #fff;
+        padding: 10px 80px 65px;
+        font-size: 22px;
+        line-height: 1.5;
+
+        p {
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .faq-screen__questions-item_open & {
+          display: block;
+        }
+      }
+    }
+  }
+}

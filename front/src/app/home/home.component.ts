@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Application } from '../application';
+import { questionsList } from './question-list';
 
 @Component({
   selector: 'app-home',
@@ -12,10 +13,14 @@ export class HomeComponent implements OnInit {
     id: 'roman_golovakha',
     name: 'Roman Golovakha'
   };
+  questions = questionsList;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleQuestion(questionIndex: number): void {
+    this.questions[questionIndex].isOpen = !this.questions[questionIndex].isOpen;
+  }
 }

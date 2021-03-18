@@ -1,5 +1,8 @@
 <app-header></app-header>
 <div class="home">
+
+
+
   <div class="first-screen">
     <div class="first-screen__title-wrapper">
       <div class="first-screen__title">
@@ -17,6 +20,8 @@
       </div>
     </div>
   </div>
+
+
 
   <div class="owner-screen">
 
@@ -62,15 +67,34 @@
 
 
   </div>
+
+
+
   <div class="faq-screen">
+
     <div class="faq-screen__title">
       FAQ
     </div>
-    <div class="faq_screen__quesions">
 
+    <div class="faq-screen__questions">
+      <div
+        class="faq-screen__questions-item"
+        *ngFor="let question of questions; let i = index"
+        [ngClass]="{'faq-screen__questions-item_open': question.isOpen}"
+        (click)="toggleQuestion(i)"
+      >
+        <div class="faq-screen__questions-item-title">
+          <span>{{question.title}}</span>
+          <button>+</button>
+        </div>
+        <div class="faq-screen__questions-item-text" [innerHTML]="question.text"></div>
+      </div>
     </div>
 
   </div>
+
+
+
   <div class="reviews-screen">
 
     <div class="reviews-screen__title">ОТЗЫВЫ</div>
@@ -85,6 +109,9 @@
     </div>
 
   </div>
+
+
+
   <div class="guarantee-screen">
 
     <div class="guarantee-screen__title"></div>
